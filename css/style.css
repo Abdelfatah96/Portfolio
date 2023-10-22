@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.cartona{
+    
+    padding:0 20px;
+}
+.navbar-toggler{
+    background-color: #198754;
+}
+.navbar-nav li{
+    margin-right: 20px !important;
+}
+.navbar-toggler-icon{
+    color: #fff !important;
+}
+.active{
+    color: #198754 !important;
+}
+.nav-item a:hover{
+    color: #198754 !important;
+    border-bottom: 2px solid #198754 ;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.job-title{
+    /* width: 446px; */
+    width: 100%;
+    overflow: hidden;
+}
+.job-title .text{
+    position: relative;
+    color: #4070F4;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.text.sec-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #6c757d;
+    border-left: 2px solid #0dcaf0;
+    animation: animate 4s steps(12) infinite;
+}
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
+}
+.aboutUs-head{
+    text-align: center;
+    height: 400px;
+    line-height: 100px;
+    /* background: #eee; */
+    margin-bottom: 60px;
+    border-bottom: 5px solid #0dcaf0;
+}
+.aboutUs-head h1{
+    position: relative;
+    top:30%
+}
+.aboutUs-head h1{
+    font-size: 150px;
+    color: #0dcaf058;
+} 
+.social-link a:hover{
+    color: #0dcaf0 !important;
+}
+
+@media screen and (max-width: 609px) {
+    .aboutUs-head h1{
+        font-size: 120px;
+    }
+}
+@media screen and (max-width: 490px) {
+    .aboutUs-head h1{
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 451px) {
+    .aboutUs-head h1{
+        font-size: 80px;
+    }
+}
+@media screen and (max-width: 483px) {
+    .aboutUs-head h1{
+        font-size: 70px;
+    }
+}
+@media screen and (max-width: 570px) {
+    .aboutUs-head h1{
+        font-size: 80px;
+    }
+}
+@media screen and (max-width: 705px) {
+    .aboutUs-head h1{
+        font-size: 100px;
+    }
+}
+.services-item{
+    transition: all  0.5s  ease-in-out;
+}
+.services-item:hover{
+    transform: scale(1.1,1.1);
+}
+.portfolio-item{
+    transition: all  0.5s  ease-in-out;
+}
+.portfolio-item:hover{
+    transform: scale(1.1,1.1);
+}
+/* textarea{
+    height: 200px;
+} */
